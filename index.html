@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=dashboard.html">
+
+    <script type="text/javascript">
+        window.location.href = "dashboard.html";
+    </script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        .message {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .message p {
+            margin: 0 0 10px;
+        }
+        .message a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .message a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <p>You are being redirected to the dashboard...</p>
+        <p>If you are not redirected automatically, <a href="dashboard.html">click here</a>.</p>
+    </div>
+</body>
+</html>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Material ID</th>
+                                <th>Material Name</th>
+                                <th>Quantity</th>
+                                <th>Unit</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example data row -->
+                            <tr>
+                                <td>RM001</td>
+                                <td>Steel Rod</td>
+                                <td>1000</td>
+                                <td>kg</td>
+                                <td><a href="edit_raw_material.html" class="edit-btn">Edit</a></td>
+                            </tr>
+                            <!-- More rows can be added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
