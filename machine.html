@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine - Production System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>PRODUCTION SYSTEM</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a href="customers.html"><i class="material-icons">people</i> Customer</a></li>
+                    <li><a href="projects.html"><i class="material-icons">folder</i> Project</a></li>
+                    <li><a href="products.html"><i class="material-icons">inventory_2</i> Product</a></li>
+                    <li class="section-title">SCHEDULE</li>
+                    <li><a href="planning.html"><i class="material-icons">calendar_today</i> Planning</a></li>
+                    <li><a href="shiftment.html"><i class="material-icons">swap_horiz</i> Shiftment</a></li>
+                    <li><a href="staff.html"><i class="material-icons">person</i> Staff</a></li>
+                    <li class="section-title">PROCESSING</li>
+                    <li><a href="production.html"><i class="material-icons">settings</i> Production</a></li>
+                    <li class="active"><a href="machine.html"><i class="material-icons">build</i> Machine</a></li> 
+                    <li><a href="raw_materials.html"><i class="material-icons">precision_manufacturing</i> Raw Materials</a></li>
+                    <li class="section-title">REPORTS</li>
+                    <li><a href="report.html"><i class="material-icons">summarize</i> Report</a></li>
+                    <li><a href="warehousing.html"><i class="material-icons">warehouse</i> Warehousing</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="navbar">
+                <div class="breadcrumbs">
+                    <span>Pages</span> / <span>Machine</span>
+                    <h2>Machine</h2>
+                </div>
+                <div class="user-info">
+                    <span>Production System</span>
+                    <a href="#" class="logout-btn">LOGOUT <i class="material-icons">logout</i></a>
+                </div>
+            </header>
+
+            <section class="machine-list-section">
+                <div class="section-box machine-schedule-container">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <i class="fas fa-users"></i> Machine Schedule
+                        </div>
+                        <a href="add_machine.html" class="add-machine-btn">ADD MACHINE</a>
+                    </div>
+
+                    <div class="machine-content-grid">
+                        <div class="machine-history">
+                            <h3>Machine History</h3>
+                            <p class="section-subtitle">History of machine used on production</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>MACHINE</th>
+                                        <th>PRODUCTION</th>
+                                        <th>DATE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Machine 1</td>
+                                        <td>Leader2</td>
+                                        <td>2025-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>machine 3</td>
+                                        <td>Leader1</td>
+                                        <td>2025-06-07</td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+
+                        <div class="machine-status">
+                            <h3>Machine Status</h3>
+                            <p class="section-subtitle">Machine for this Production</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>MACHINE</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Machine 1 / 300 Kg</td>
+                                        <td><span class="status ready">READY</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Tes Machine / 90 Kg</td>
+                                        <td><span class="status ready">READY</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>machine 7 / 7 Kg</td>
+                                        <td><span class="status ready">READY</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>machine 3 / 80 Kg</td>
+                                        <td><span class="status ready">READY</span></td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        Production Management System by Hridoy Sarkar
+    </footer>
+</body>
+</html>

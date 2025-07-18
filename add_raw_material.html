@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Raw Material - Production System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>PRODUCTION SYSTEM</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a href="customers.html"><i class="material-icons">people</i> Customer</a></li>
+                    <li><a href="projects.html"><i class="material-icons">folder</i> Project</a></li>
+                    <li><a href="products.html"><i class="material-icons">inventory_2</i> Product</a></li>
+                    <li class="section-title">SCHEDULE</li>
+                    <li><a href="planning.html"><i class="material-icons">calendar_today</i> Planning</a></li>
+                    <li><a href="shiftment.html"><i class="material-icons">swap_horiz</i> Shiftment</a></li>
+                    <li><a href="leader.html"><i class="material-icons">person</i> Leader</a></li>
+                    <li class="section-title">PROCESSING</li>
+                    <li><a href="production.html"><i class="material-icons">settings</i> Production</a></li>
+                    <li><a href="machine.html"><i class="material-icons">build</i> Machine</a></li>
+                    <li class="active"><a href="raw_materials.html"><i class="material-icons">precision_manufacturing</i> Raw Materials</a></li>
+                    <li class="section-title">REPORTS</li>
+                    <li><a href="report.html"><i class="material-icons">summarize</i> Report</a></li>
+                    <li><a href="#"><i class="material-icons">warehouse</i> Warehousing</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="navbar">
+                <div class="breadcrumbs">
+                    <span>Pages</span> / <span>Material</span>
+                    <h2>Add NEW Material</h2>
+                </div>
+                <div class="user-info">
+                    <span>Production System</span>
+                    <a href="#" class="logout-btn">LOGOUT <i class="material-icons">logout</i></a>
+                </div>
+            </header>
+
+            <section class="add-material-section">
+                <div class="section-box add-material-form-container">
+                    <h3>Create Material Data</h3>
+                    <p class="section-subtitle">Form to create a new data</p>
+
+                    <div class="form-grid">
+                        <div class="form-column main-form">
+                            <div class="form-group">
+                                <label for="materialName">Material Name</label>
+                                <input type="text" id="materialName" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="stock">Stock</label>
+                                <input type="text" id="stock" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-column save-options">
+                            <p>Create and save this data?</p>
+                            <div class="button-group">
+                                <a href="raw_materials.html" class="btn btn-back">BACK</a>
+                                <button type="submit" class="btn btn-save">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        Production Management System by Hridoy Sarkar
+    </footer>
+</body>
+</html>

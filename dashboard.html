@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production System Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>PRODUCTION SYSTEM</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a href="customers.html"><i class="material-icons">people</i> Customer</a></li>
+                    <li><a href="projects.html"><i class="material-icons">folder</i> Project</a></li>
+                    <li><a href="products.html"><i class="material-icons">inventory_2</i> Product</a></li>
+                    <li class="section-title">SCHEDULE</li>
+                    <li><a href="planning.html"><i class="material-icons">calendar_today</i> Planning</a></li>
+                    <li><a href="shiftment.html"><i class="material-icons">swap_horiz</i> Shiftment</a></li>
+                    <li><a href="staff.html"><i class="material-icons">person</i> Leader</a></li>
+                    <li class="section-title">PROCESSING</li>
+                    <li><a href="production.html"><i class="material-icons">settings</i> Production</a></li>
+                    <li><a href="machine.html"><i class="material-icons">build</i> Machine</a></li>
+                    <li><a href="raw_materials.html"><i class="material-icons">precision_manufacturing</i> Raw Materials</a></li>
+                    <li class="section-title">REPORTS</li>
+                    <li><a href="report.html"><i class="material-icons">summarize</i> Report</a></li>
+                    <li><a href="warehousing.html"><i class="material-icons">warehouse</i> Warehousing</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="navbar">
+                <div class="breadcrumbs">
+                    <span>Pages</span> / <span>Dashboard</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user-info">
+                    <span>Production System</span>
+                    <a href="#" class="logout-btn">LOGOUT <i class="material-icons">logout</i></a>
+                </div>
+            </header>
+
+            <section class="dashboard-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="material-icons">folder</i></div>
+                    <div class="card-content">
+                        <h4>Projects</h4>
+                        <p class="card-number">1</p>
+                        <p class="card-status"><i class="material-icons">folder</i> Projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="material-icons">calendar_today</i></div>
+                    <div class="card-content">
+                        <h4>Planning</h4>
+                        <p class="card-number">1</p>
+                        <p class="card-status"><i class="material-icons">calendar_today</i> Planning Created</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="material-icons">settings</i></div>
+                    <div class="card-content">
+                        <h4>Production</h4>
+                        <p class="card-number">2</p>
+                        <p class="card-status"><i class="material-icons">settings</i> Process Production</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="material-icons">check_circle</i></div>
+                    <div class="card-content">
+                        <h4>Project Progress</h4>
+                        <p class="card-number">1</p>
+                        <p class="card-status"><i class="material-icons">schedule</i> Project on Progress</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-sections">
+                <div class="section-box production-progress">
+                    <h3>Production Progress</h3>
+                    <p class="section-subtitle">Summary of production progress</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Qty Request</th>
+                                <th>Finished</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tes Customer</td>
+                                <td>200 Kg</td>
+                                <td>70 Kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section-box production-history">
+                    <h3>Production History</h3>
+                    <p class="section-subtitle">Summary of last production</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Planning</th>
+                                <th>Shiftment</th>
+                                <th>Finished</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Plan-test</td>
+                                <td>Leader2</td>
+                                <td>20 Kg</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Plan-test</td>
+                                <td>Leader1</td>
+                                <td>50 Kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        Production Management System by Hridoy Sarkar
+    </footer>
+</body>
+</html>
